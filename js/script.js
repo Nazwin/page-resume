@@ -23,7 +23,10 @@ window.onload = async function(){
 		})
 
 		query.tasks.forEach((el, i) => {
-
+			let tech = "";
+			el.tech.forEach(item =>{
+				tech += `<li>${item}</li>`;
+			})
 			let item = 
 			`<div class="tasks__item task">
 				<div class="task__wrapper">
@@ -36,8 +39,7 @@ window.onload = async function(){
 					<div class="task__info">${el.info}</div>
 					<div class="task__tech">
 						<ul>
-							<li>JavaScript</li>
-							<li>.postMessage()</li>
+							${tech}
 						</ul>
 					</div>
 				</div>
