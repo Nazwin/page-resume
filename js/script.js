@@ -1,18 +1,19 @@
 
 
+let loader = document.querySelector(".loading");
+function closeLoading(){
+	loader.classList.add("hidden");
+	setTimeout(function(){
+		loader.classList.add("ready");
+	}, 650)
+}
+
+let tasksColumn = document.querySelectorAll(".tasks__body>.tasks__column");
+let accordion = document.querySelector(".faq__accordion");
+
 window.onload = async function(){
 	let url = "https://script.google.com/macros/s/AKfycbxBRLm96lE6iUIGVQ-y06Lj0yh_oUaRnNDTXEwIK_8A-PeprmPMxmHWt_bWmiEaW3dW/exec";
 
-	let tasksColumn = document.querySelectorAll(".tasks__body>.tasks__column");
-	let accordion = document.querySelector(".faq__accordion");
-
-	let loader = document.querySelector(".loading");
-	function closeLoading(){
-		loader.classList.add("hidden");
-		setTimeout(function(){
-			loader.classList.add("ready");
-		}, 650)
-	}
 
 	async function main(){
 		let obj;
@@ -71,7 +72,6 @@ window.onload = async function(){
 	await main()
 	// Accordion
 	let selector = document.querySelectorAll('.accordion__item');
-	console.log(selector)
 	selector.forEach((el, i) => {
 		el.children[0].addEventListener('click', event => {
 			el.children[1].classList.toggle("open")
