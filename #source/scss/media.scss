@@ -1,0 +1,116 @@
+@media (max-width: 930px){
+
+
+	.fullscreen {
+		&__wrapper {}
+		&__content {}
+		&__block {}
+		&__welcome {
+			h1 {
+				font-size: 72px;
+			}
+			span {
+				font-size: 26px;
+			}
+		}
+		&__comment {}
+	}
+}
+
+@media (max-width: 768px){
+	.about {
+		&__body {
+			flex-direction: column-reverse;
+		}
+		&__left {
+			margin: 0;
+		}
+	}
+	.photo {
+		&__wrapper {
+			max-width: 50%;
+			padding-bottom: 50%;
+			margin: 0 auto 35px auto;
+		}
+	}
+	.skills {
+		&__list {
+			li {
+				flex: 1 0 100%;
+				max-width: none;
+			}
+		}
+	}
+	.tasks {
+		&__body {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__column {
+			max-width: none;
+			&:first-child {
+				// margin-bottom: 30px;
+			}
+		}
+	}
+	.faq {
+		&__accordion {
+			margin-left: 45px;
+		}
+	}
+}
+
+@media (max-width: 425px){
+	.fullscreen {
+		&__content {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+		&__welcome {
+			h1 {
+				font-size: 38px;
+			}
+			span {
+				font-size: 18px;
+			}
+		}
+		&__comment {
+			max-width: 80%;
+		}
+	}
+	.photo {
+		&__wrapper {
+			max-width: 80%;
+			padding-bottom: 80%;
+			margin: 0 auto 35px auto;
+		}
+	}
+	.about {
+		&__left {
+			padding: 0 30px;
+		}
+	}
+	.skills {
+		&__body {
+			margin-left: 30px;
+		}
+	}
+	.faq {
+		&__accordion {
+			margin-left: 30px;
+		}
+	}
+	.questions {
+		&__title {
+			font-size: 20px;
+			margin-left: 46px;
+		}
+	}
+	.contact {
+		&__title {
+			font-size: 46px;
+		}
+	}
+
+}
