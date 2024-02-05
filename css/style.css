@@ -573,6 +573,7 @@ body {
   -webkit-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
   transition: all 0.6s ease;
+  scale: 0.6;
 }
 
 .accordion__header span:after {
@@ -588,6 +589,7 @@ body {
   -webkit-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
   transition: all 0.6s ease;
+  scale: 0.6;
 }
 
 .accordion__collapse {
@@ -635,7 +637,7 @@ body {
 }
 
 .questions__title {
-  margin-left: 56px;
+  margin-left: 40px;
   font-size: 24px;
 }
 
@@ -800,4 +802,10 @@ body {
   .contact__title {
     font-size: 46px;
   }
+}
+
+a.contact__link:hover {
+  color: #64ffda;
+  text-shadow: 0 0 15px #64ffda;
+  transition: all 0.5s ease;
 }
