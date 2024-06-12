@@ -371,6 +371,16 @@
 	&__btn {
 		color: #64FFDA;
 	}
+	&__links {
+		display: flex;
+		gap: 30px;
+		align-items: center;
+	}
+	&__link:hover {
+		color: #64ffda;
+		text-shadow: 0 0 15px #64ffda;
+		transition: all 0.5s ease;
+	}
 }
 
 // F O O T E R
