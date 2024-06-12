@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  node:
+    build: .
+    container_name: node-app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    command: gulp
+    environment:
+      NODE_ENV: development
