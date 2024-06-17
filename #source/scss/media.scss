@@ -1,6 +1,4 @@
 @media (max-width: 930px){
-
-
 	.fullscreen {
 		&__wrapper {}
 		&__content {}
@@ -51,6 +49,11 @@
 			&:first-child {
 				// margin-bottom: 30px;
 			}
+		}
+	}
+	.jobs {
+		&__body {
+			grid-template-columns: repeat(1, auto);
 		}
 	}
 	.faq {
