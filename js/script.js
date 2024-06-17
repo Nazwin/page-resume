@@ -23,34 +23,34 @@ window.onload = async function(){
 			elem[0].insertAdjacentHTML('beforeend', `<li class="skill__item">${el.value}</li>`)
 		})
 
-		query.tasks.forEach((el, i) => {
-			let tech = "";
-			el.tech.forEach(item =>{
-				tech += `<li>${item}</li>`;
-			})
-			let item = 
-			`<div class="tasks__item task">
-				<div class="task__wrapper">
-					<div class="task__header">
-						<a href="${el.link ? el.link : "#"}" ${!el.link ? "class=\"not-ready\"" : ""}>
-							<img src="img/external_link_icon.svg" alt="">
-						</a>
-					</div>
-					<div class="task__title">${el.title}</div>
-					<div class="task__info">${el.info}</div>
-					<div class="task__tech">
-						<ul>
-							${tech}
-						</ul>
-					</div>
-				</div>
-			</div>`;
-			if(i <= query.tasks.length / 2 - 1){
-				tasksColumn[0].insertAdjacentHTML('beforeend', item);
-			} else {
-				tasksColumn[1].insertAdjacentHTML('beforeend', item);
-			}
-		})
+		// query.tasks.forEach((el, i) => {
+		// 	let tech = "";
+		// 	el.tech.forEach(item =>{
+		// 		tech += `<li>${item}</li>`;
+		// 	})
+		// 	let item =
+		// 	`<div class="tasks__item task">
+		// 		<div class="task__wrapper">
+		// 			<div class="task__header">
+		// 				<a href="${el.link ? el.link : "#"}" ${!el.link ? "class=\"not-ready\"" : ""}>
+		// 					<img src="img/external_link_icon.svg" alt="">
+		// 				</a>
+		// 			</div>
+		// 			<div class="task__title">${el.title}</div>
+		// 			<div class="task__info">${el.info}</div>
+		// 			<div class="task__tech">
+		// 				<ul>
+		// 					${tech}
+		// 				</ul>
+		// 			</div>
+		// 		</div>
+		// 	</div>`;
+		// 	if(i <= query.tasks.length / 2 - 1){
+		// 		tasksColumn[0].insertAdjacentHTML('beforeend', item);
+		// 	} else {
+		// 		tasksColumn[1].insertAdjacentHTML('beforeend', item);
+		// 	}
+		// })
 
 		query.faq.forEach(el => {
 			let item =
