@@ -29,6 +29,27 @@ li {
   padding: 0;
 }
 
+p[data-typing-text]::after {
+  content: '|';
+  -webkit-animation: blink-caret 1s linear infinite;
+          animation: blink-caret 1s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #CCCCCC;
+}
+
+@-webkit-keyframes blink-caret {
+  50% {
+    color: transparent;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    color: transparent;
+  }
+}
+
 body {
   font-family: 'Hind Madurai', sans-serif;
   font-weight: 300;
@@ -292,6 +313,7 @@ body {
   max-width: 545px;
   margin: 0 auto;
   text-align: center;
+  letter-spacing: 0.15rem;
 }
 
 .btn-next {
