@@ -1,4 +1,5 @@
 @@include("modal.js")
+@@include("functions.js")
 
 let loader = document.querySelector(".loading");
 function closeLoading(){
@@ -70,6 +71,9 @@ window.onload = async function(){
 		closeLoading();
 	}
 	await main()
+	setTimeout(function(){
+		typeText();
+	}, 1000)
 	// Accordion
 	let selector = document.querySelectorAll('.accordion__item');
 	selector.forEach((el, i) => {

@@ -18,6 +18,21 @@ ul, li {
     padding: 0;
 }
 
+p[data-typing-text]::after {
+	content: '|';
+	animation: blink-caret 1s linear infinite;
+	white-space: nowrap;
+	overflow: hidden;
+	//border-right: .15em solid #CCCCCC;
+	color: #CCCCCC;
+}
+@keyframes blink-caret {
+	50% {
+		color: transparent;
+		//border-color: transparent;
+	}
+}
+
 body {
 	font-family: 'Hind Madurai', sans-serif;
 	font-weight: 300;
