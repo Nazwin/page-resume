@@ -187,6 +187,11 @@
 		grid-gap: 30px;
 		justify-content: center;
 	}
+	&__column {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
 }
 .job {
 	&__wrapper {
