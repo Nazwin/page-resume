@@ -910,6 +910,7 @@ body {
 
   .jobs__body {
     grid-template-columns: repeat(1, auto);
+    grid-gap: 15px;
   }
 
   .jobs__column {

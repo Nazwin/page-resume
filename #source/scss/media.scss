@@ -54,6 +54,7 @@
 	.jobs {
 		&__body {
 			grid-template-columns: repeat(1, auto);
+			grid-gap: 15px;
 		}
 		&__column {
 			gap: 15px;
