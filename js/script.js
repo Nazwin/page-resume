@@ -11,13 +11,13 @@ const typeText = () => {
         return;
     }
     const v = getRandomInt(1, 100);
-    if (v > 90 && position !== 0) {
+    if (v > 94 && position !== 0) {
         out.textContent += str[getRandomInt(0, str.length - 2)];
         setTimeout(removeLastChar, 1000)
     } else {
         out.textContent += str[position];
         position++;
-        setTimeout(typeText, getRandomInt());
+        setTimeout(typeText, getRandomInt(25, 250));
     }
 }
 
